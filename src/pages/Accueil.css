@@ -1,0 +1,382 @@
+@charset "UTF-8";
+
+/* ===================profile ==================*/
+.parallax-wrapper {
+  overflow-y: hidden;
+}
+
+/* background for header */
+.parallax {
+  height: 68vh;
+}
+@media (max-width: 768px) {
+  /* background for header */
+  .parallax {
+    height: 72vh;
+  }
+  span.name {
+    font-size: 1.3rem !important;
+  }
+  h3.category {
+    margin-top: 20px;
+    font-size: 1.2rem !important;
+    word-wrap: break-word; /* permet de couper les mots longs */
+    white-space: normal;
+    text-align: center;
+  }
+}
+/* avatar */
+.profile-img img {
+  position: relative;
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+  padding: 0;
+  margin: 0;
+  border: 15px solid transparent;
+  z-index: 9999;
+  transition: all 0.3s ease-out;
+}
+
+.profile-img a {
+  position: relative;
+}
+
+.profile-img a:before {
+  content: "";
+  border: 40px solid rgba(78, 130, 151, 0.3);
+  box-shadow: 0 0 0 0 black;
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+  position: absolute;
+  left: 0;
+  animation: pulse 2s ease-out;
+  animation-iteration-count: infinite;
+  opacity: 0;
+  z-index: 30;
+}
+
+.profile-img a:hover img {
+  transform: scale(1.06, 1.06);
+}
+
+.profile-img a:hover:before {
+  animation: none;
+}
+
+/* animation of avatar */
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.6, 0.6);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+
+/* title for name */
+.content-profile-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 0 15px;
+  color: #ffffff;
+  width: 100%;
+  max-width: 880px;
+}
+
+.content-profile-center span.name {
+  font-size: 2em;
+  letter-spacing: 0;
+  display: block;
+  margin: 0 auto;
+  color: white !important;
+  /* Clip Background Image */
+  background: url("/images/animated-text-fill-blue.webp") repeat-y;
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* Animate Background Image */
+  -webkit-text-fill-color: transparent !important;
+  animation: animTitle 80s linear infinite;
+  /* Activate hardware acceleration for smoother animations */
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+}
+
+.content-profile-center h3 {
+  font-weight: bold;
+}
+
+/* animation of title name */
+
+@keyframes animTitle {
+  100% {
+    background-position: 0% 50%;
+  }
+  0% {
+    background-position: 100% 50%;
+  }
+}
+
+/* two buttons */
+.twoButtons {
+  font-family: "Ludicrous-Stencil", sans-serif !important;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  letter-spacing: 4px;
+}
+
+.twoButtons div {
+  width: 85px;
+  height: 85px;
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 3s ease-in;
+}
+
+.twoButtons div:hover {
+  transform: translateY(-100%);
+}
+
+.twoButtons div:hover a {
+  color: #07485e;
+  opacity: 0.6;
+}
+
+.twoButtons div a,
+.twoButtons div img {
+  text-align: center;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  transition: all 0.3s ease-in;
+}
+
+.twoButtons div a {
+  display: flex;
+  justify-content: center;
+  top: 80px;
+  color: #07485e;
+  opacity: 0.8;
+  font-weight: bold;
+  line-height: 20px;
+  z-index: 1;
+}
+
+.twoButtons div img {
+  top: 15px;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+/* bulles */
+.profile > .bubble-ocean {
+  position: relative;
+  width: 80vw;
+}
+
+.bubble {
+  border-radius: 50%;
+  position: absolute;
+  background: #275b7a;
+  background: radial-gradient(circle, #143547 0%, #6aaacf 50%, white 100%);
+  bottom: -10px;
+  opacity: 0.3;
+  animation: bubble 15s ease-in-out infinite,
+    sideWays 4s ease-in-out infinite alternate;
+}
+
+@keyframes bubble {
+  0% {
+    transform: translateY(0%);
+    opacity: 0.06;
+  }
+  100% {
+    transform: translateY(-120vh);
+  }
+}
+
+@keyframes sideWays {
+  0% {
+    margin-left: 0px;
+  }
+  50% {
+    margin-left: 3em;
+  }
+  100% {
+    margin-left: 1em;
+  }
+}
+
+.bubble--1 {
+  width: 9px;
+  height: 9px;
+  left: 15%;
+  bottom: 30px;
+  animation-delay: 0.5s;
+  animation-duration: 16s;
+  opacity: 0.3;
+}
+
+.bubble--2 {
+  width: 15px;
+  height: 15px;
+  left: 40%;
+  bottom: 30px;
+  animation-delay: 1s;
+  animation-duration: 10s;
+  opacity: 0.1;
+}
+
+.bubble--3 {
+  width: 10px;
+  height: 10px;
+  left: 30%;
+  bottom: 30px;
+  animation-delay: 5s;
+  animation-duration: 20s;
+  opacity: 0.3;
+}
+
+.bubble--4 {
+  width: 25px;
+  height: 25px;
+  left: 45%;
+  bottom: 30px;
+  animation-delay: 3s;
+  animation-duration: 17s;
+  opacity: 0.2;
+}
+
+.bubble--5 {
+  width: 10px;
+  height: 10px;
+  left: 60%;
+  bottom: 30px;
+  animation-delay: -10s;
+  animation-duration: 15s;
+  opacity: 0.1;
+}
+
+.bubble--6 {
+  width: 20px;
+  height: 20px;
+  left: 90%;
+  bottom: 30px;
+  animation-delay: 2s;
+  animation-duration: 30s;
+  opacity: 0.4;
+}
+
+.bubble--7 {
+  width: 15px;
+  height: 15px;
+  left: 25%;
+  bottom: 30px;
+  animation-delay: -7s;
+  animation-duration: 25s;
+  opacity: 0.3;
+}
+
+.bubble--9 {
+  width: 30px;
+  height: 30px;
+  left: 38%;
+  bottom: 30px;
+  animation-delay: 2s;
+  animation-duration: 19s;
+  opacity: 0.2;
+}
+
+.bubble--10 {
+  width: 20px;
+  height: 20px;
+  left: 20%;
+  bottom: 30px;
+  animation-delay: -21s;
+  animation-duration: 16s;
+  opacity: 0.3;
+}
+
+.bubble--11 {
+  width: 30px;
+  height: 30px;
+  left: 70%;
+  bottom: 30px;
+  animation-delay: -13.75s;
+  animation-duration: 15s;
+  opacity: 0.3;
+}
+
+.bubble--12 {
+  width: 7px;
+  height: 5px;
+  left: 95%;
+  bottom: 30px;
+  animation-duration: 19s;
+  opacity: 0.3;
+}
+
+.bubble--13 {
+  width: 10px;
+  height: 10px;
+  left: 15%;
+  bottom: 30px;
+  animation-delay: -5s;
+  animation-duration: 10s;
+  opacity: 0.3;
+}
+
+.bubble--14 {
+  width: 9px;
+  height: 9px;
+  left: 18%;
+  bottom: 30px;
+  animation-delay: -9s;
+  animation-duration: 10s;
+  opacity: 0.4;
+}
+
+.bubble--15 {
+  width: 17px;
+  height: 17px;
+  left: 65%;
+  bottom: 30px;
+  animation-delay: -8s;
+  animation-duration: 12s;
+  opacity: 0.3;
+}
+
+.bubble--16 {
+  width: 12px;
+  height: 12px;
+  left: 80%;
+  bottom: 30px;
+  animation-delay: -1s;
+  animation-duration: 8s;
+  opacity: 0.3;
+}
+.balle:hover {
+  color: red !important;
+}
+
+.name {
+  font-family: "cute-animal" !important;
+  font-size: 3rem !important;
+  color: #fff !important;
+  text-shadow: 2px 2px 4px rgba(26, 142, 205, 0.5);
+}

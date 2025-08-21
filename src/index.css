@@ -1,0 +1,160 @@
+/* ================================
+   Import des polices Google Fonts
+================================ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap');
+@font-face {
+    font-family: "Ludicrous-Stencil";
+    src: url("/fonts/Ludicrous-Stencil.ttf");
+}
+@font-face {
+    font-family: "cute-animal";
+    src: url("/fonts/cute-animal.ttf");
+}
+html{
+  scroll-behavior: smooth;
+  width: 100%;
+}
+html, body {
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+/* ================================
+   Variables globales
+================================ */
+:root {
+  /* Couleurs */
+  --primary: #fab347;        /* Couleur accent (orange) */
+  --primaryClear: #f8d094;        
+  --primaryFonce: #b27a25;        
+  --secondary: #6c757d;      /* Gris secondaire */
+  --dark: #4e5358;           /* Fond sombre */
+  --light: #f8f9fa;          /* Fond clair */
+  --text-dark: #212529;      /* Texte foncé */
+  --text-light: #ffffff;     /* Texte clair */
+
+  /* Typographie */
+  --font-primary: 'Poppins', sans-serif;
+  --font-secondary: 'Roboto', sans-serif;
+
+  /* Espacements */
+  --section-padding: 60px;
+}
+
+/* ================================
+   Reset de base
+================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================================
+   Styles généraux
+================================ */
+body {
+  font-family: var(--font-primary);
+  color: var(--text-dark);
+
+  background-color: #f3f4f6 !important;
+
+  line-height: 1.6;
+  width: 100%;
+}
+
+/* ================================
+   Liens
+================================ */
+a {
+  color: var(--text-dark);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--primary) !important;
+}
+
+/* ================================
+   Titres et paragraphes
+================================ */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  color: var(--dark) !important;
+}
+
+p {
+  font-family: var(--font-secondary);
+}
+
+/* ================================
+   Sections
+================================ */
+section {
+  padding: var(--section-padding) 0;
+}
+
+/* ================================
+   Navbar & Footer uniformes
+================================ */
+.navbar,
+footer {
+  background-color: var(--dark) !important;
+}
+
+.navbar a,
+footer a,.footer-text {
+  color: rgba(185, 185, 185, 0.7);
+   text-decoration: none;
+}
+
+.navbar a:hover,
+footer a:hover {
+  color: var(--primary) !important;
+}
+
+/* ================================
+   Footer
+================================ */
+footer {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+footer hr {
+  border-color: var(--secondary);
+}
+
+/* ================================
+   Navbar personnalisée
+================================ */
+.navbar-custom {
+  background: linear-gradient(
+    to bottom,
+    #3a3d42,  /* haut plus clair pour le reflet */
+    #212529,  /* couleur de base */
+    #1a1c20   /* bas plus foncé pour profondeur */
+  );
+  border-bottom: 4px solid var(--primary); /* légèrement plus épais */
+  border-radius: 0 0 25px 25px; /* arrondi bas accentué */
+  box-shadow: 
+    inset 0 14px 20px rgba(255, 255, 255, 0.15), /* reflet interne plus visible */
+    0 6px 10px rgba(0,0,0,0.15);               /* ombre externe plus marquée */
+  transition: all 0.3s ease;
+}
+
+/* Optionnel : effet au hover pour accentuer le reflet */
+.navbar-custom:hover {
+  background: linear-gradient(
+    to bottom,
+    #4b4f55,  /* reflet plus clair */
+    #212529,
+    #1a1c20
+  );
+}
+
+

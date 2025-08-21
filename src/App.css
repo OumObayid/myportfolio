@@ -1,0 +1,15 @@
+.skill-card {
+  background-color: #ffffff; /* fond blanc */
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
