@@ -24,3 +24,5 @@ dist-ssr
 *.sw?
 .htaccess
 serverPhp.bat
+.env
+.env.*
