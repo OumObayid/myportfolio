@@ -6,7 +6,6 @@
 
 # 🌟 Application Oumportfolio
 
-**Créée en 2025**  
 Oumportfolio est une **application web personnelle dynamique** développée avec **React.js (Vite)** et un backend en **PHP**.  
 
 Elle a pour objectif de présenter  **profil, compétences et projets** de manière interactive et moderne.  
