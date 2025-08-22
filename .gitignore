@@ -26,3 +26,4 @@ dist-ssr
 serverPhp.bat
 .env
 .env.*
+apiEmail/.env

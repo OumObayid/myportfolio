@@ -4,7 +4,10 @@ import photo from "/images/photo.png";
 
 function Header() {
   return (
-<nav style={{zIndex:2000}} className="px-5 navbar navbar-expand-lg navbar-dark bg-dark w-100 navbar-custom">
+    <nav
+      style={{ zIndex: 2000 }}
+      className="px-5 navbar navbar-expand-lg navbar-dark bg-dark w-100 navbar-custom"
+    >
       <div className="container-fluid">
         {/* Logo à gauche */}
         <Link className="navbar-brand" to="/">
@@ -53,9 +56,14 @@ function Header() {
                 Contact
               </Link>
             </li>
-             <li className="nav-item">
+            <li className="nav-item">
               <Link className="nav-link" to="/about">
-                About
+                A propos
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/guestbook">
+                Livre d'or
               </Link>
             </li>
             <li className="nav-item ms-3">

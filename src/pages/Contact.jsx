@@ -141,13 +141,14 @@ const Contact = () => {
           </Form.Group>
 
           <div className="text-center">
+            
             <Button
-              variant="warning"
+              variant="white"
               type="submit"
               disabled={loading}
-              className="px-5"
+              className="btn btn-sm btn-outline-dark mt-auto w-100 mt3"
             >
-              {loading ? <Spinner animation="border" size="sm" /> : "Envoyer"}
+              {loading ? <Spinner animation="border" size="sm" /> : "✈️   Envoyer"}
             </Button>
           </div>
         </Form>

@@ -5,6 +5,7 @@ import Projets from "../pages/Projets";
 import Skills from "../pages/skills";
 import About from "../pages/About";
 import CvPage from "../pages/CvPage";
+import Guestbook from "../pages/Guestbook";
 
 export default function AppRoutes() {
   return (
@@ -15,6 +16,8 @@ export default function AppRoutes() {
       <Route path="/contact" element={<Contact />} />
       <Route path="/about" element={<About />} />
       <Route path="/cv" element={<CvPage />} />
+      <Route path="/guestbook" element={<Guestbook />} />
+      {/* Add more routes as needed */}
     </Routes>
   );
 }
