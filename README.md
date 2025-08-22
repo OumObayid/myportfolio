@@ -59,5 +59,11 @@ npm run dev
 
 - Vérifier que l’API est accessible (ex: https://votre-domaine.com/api/guestbook/addGuestbook.php).
 
+---
 
+## 👨‍💻 Auteur :
+    - **Oumaima El Obayid** 
+    - Email : elobayidoumaima@gmail.com --- 
+
+---
 
