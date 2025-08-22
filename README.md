@@ -51,7 +51,7 @@ npm install
 npm run dev
 ```
 
-## ⚙️ Installation du back-end
+### ⚙️ Installation du back-end
 
 - Copier le dossier back-end/ dans votre serveur (Apache/Nginx).
 
