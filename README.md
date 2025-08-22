@@ -1,12 +1,64 @@
-# React + Vite
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🌟 Application Oumportfolio
 
-Currently, two official plugins are available:
+**Créée en 2025**  
+Oumportfolio est une **application web personnelle dynamique** développée avec **React.js (Vite)** et un backend en **PHP**.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Elle a pour objectif de présenter  **profil, compétences et projets** de manière interactive et moderne.  
 
-## Expanding the ESLint configuration
+Les visiteurs peuvent :  
+- Explorer les **réalisations** dans différents frameworks et outils,  
+- Consulter et **télécharger le CV**,  
+- Laisser un **avis** dans le livre d’or,  
+- Utiliser le **formulaire de contact** pour échanger ou collaborer.  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📸 Aperçu
+
+<img width="960" height="540" alt="oumportfolio" src="https://github.com/user-attachments/assets/bb140e2f-d86b-45b0-a065-9a67c7c1f7d4" />
+
+---
+
+## 🚀 Démo
+👉 [Lien vers le site](https://oumportfolio.com/)
+
+---
+## 🚀 Installation & Lancement
+
+### 🔧 Prérequis
+- Node.js >= 18  
+- PHP >= 8  
+- MySQL (pour stocker les avis/messages)
+
+### ⚙️ Installation du front-end
+
+```
+# Cloner le projet
+git clone https://github.com/votre-utilisateur/oumportfolio.git
+
+# Aller dans le dossier front-end
+cd oumportfolio/front-end
+
+# Installer les dépendances
+npm install
+
+# Lancer l'application
+npm run dev
+```
+
+## ⚙️ Installation du back-end
+
+- Copier le dossier back-end/ dans votre serveur (Apache/Nginx).
+
+- Configurer la base de données dans config.php.
+
+- Vérifier que l’API est accessible (ex: https://votre-domaine.com/api/guestbook/addGuestbook.php).
+
+
+
