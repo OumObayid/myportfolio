@@ -20,7 +20,7 @@ Les visiteurs peuvent :
 
 ## 📸 Aperçu
 
-<img width="960" height="540" alt="oumportfolio" src="https://github.com/user-attachments/assets/bb140e2f-d86b-45b0-a065-9a67c7c1f7d4" />
+<img width="320" height="180" alt="oumportfolio" src="https://github.com/user-attachments/assets/bb140e2f-d86b-45b0-a065-9a67c7c1f7d4" />
 
 ---
 
